@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 
 const Home = () => {
 
-    const user = useSelector((state) => state.user.user.user)
+    const user = useSelector((state) => state?.user?.user?.user)
 
    
 
@@ -20,7 +20,7 @@ const Home = () => {
 
                 <div className="w-[96%] p-5 border-2 rounded-lg h-[94%]">
 
-                    <h1 className="text-black text-5xl font-bold">Welcome, {user.name}!</h1>
+                    <h1 className="text-black text-5xl font-bold">Welcome, {user?.name}!</h1>
 
                 </div>
 

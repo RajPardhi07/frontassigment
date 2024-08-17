@@ -15,7 +15,7 @@ const Profile = () => {
             try {
                 const response = await axios.get(`https://backendassign-wcqv.onrender.com/api/member/get-member/${profileId}`);
                 console.log("response", response.data.getSingleMember);
-                setUserData(response.data.getSingleMember);
+                setUserData(response?.data?.getSingleMember);
                 setLoading(false);
             } catch (error) {
                 console.error("Error fetching user data:", error);
